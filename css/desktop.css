@@ -37,7 +37,7 @@ header > #nav-bar > .left-align {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 45%;
+    width: 45vw;
 }
 
 header > #nav-bar > .right-align ul li {
