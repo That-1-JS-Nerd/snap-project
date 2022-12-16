@@ -71,7 +71,7 @@ header > #nav-bar > .right-align ul li a {
 
 .features::after,
 .company::after {
-    content: url('/intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg');
+    content: url('../images/icon-arrow-down.svg');
     height: 100%;
     margin-left: 10px;
     display: inline-block;
@@ -94,22 +94,29 @@ header > #nav-bar > .right-align ul li a {
 .container > .main-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     width: 50%;
     height: 100%;
+    justify-content: flex-end;
+}
+.main-content > .content {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* container divs */
 
-.container > .main-content > .header {
+.container > .main-content > .content > .header {
     width: 100%;
 }
 
-.container > .main-content > .header > h1 {
+.container > .main-content > .content > .header > h1 {
     font-size: 5.2vw;
 }
 
-.container > .main-content > .paragraph > p {
+.container > .main-content > .content > .paragraph > p {
     color: var(--m-gray);
     line-height: 1.5rem;
     letter-spacing: 1px;
@@ -127,7 +134,7 @@ header > #nav-bar > .right-align ul li a {
     font-size: var(--font-size-default);
 }
 
-.container > .main-content > .cts {
+.container > .main-content > .content > .cts {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
