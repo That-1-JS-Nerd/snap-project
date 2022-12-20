@@ -77,12 +77,74 @@ header > #nav-bar > .right-align ul li a {
     display: inline-block;
 }
 
-/* Navigation active styles */
+.features-modal,
+.company-modal {
+    display: none;
+    position: absolute;
+    margin: 2px;
+    border: none;
+    box-shadow: 2px 4px 15px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 180px;
+    font-size: 14px;
+    top: 20px;
+}
 
+.features-modal {
+    height: 140px;
+}
 
+.company-modal {
+    height: 100px;
+}
+
+.left-align > ul > .modals {
+    position: relative;
+    width: 100%;
+}
+
+.flex-display {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-display > ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-align > ul > .modals > .features-modal {
+    left: -60px;
+}
+
+.left-align > ul > .modals > .company-modal {
+    left: 140px;
+}
+
+.modals > .features-modal > .flex-display > ul > li:first-of-type::before {
+    content: url('../images/icon-todo.svg');
+    padding: 5px;
+}
+
+.modals > .features-modal > .flex-display > ul > li:nth-of-type(2)::before {
+    content: url('../images/icon-calendar.svg');
+    padding: 5px;
+}
+
+.modals > .features-modal > .flex-display > ul > li:nth-of-type(3)::before {
+    content: url('../images/icon-reminders.svg');
+    padding: 5px;
+}
+
+.modals > .features-modal > .flex-display > ul > li:last-of-type::before {
+    content: url('../images/icon-planning.svg');
+    padding: 5px;
+}
 
 /* Container */
-
 .container {
     display: flex;
     justify-content: space-between;
@@ -98,6 +160,7 @@ header > #nav-bar > .right-align ul li a {
     height: 100%;
     justify-content: flex-end;
 }
+
 .main-content > .content {
     display: flex;
     width: 100%;
